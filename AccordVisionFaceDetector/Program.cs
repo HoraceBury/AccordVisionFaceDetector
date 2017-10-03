@@ -18,12 +18,12 @@ namespace AccordVisionFaceDetector
 
             HaarCascade cascade = new FaceHaarCascade();
             var detector = new HaarObjectDetector(cascade, 30);
-
-            detector.SearchMode = ObjectDetectorSearchMode.Average;
-            detector.ScalingMode = ObjectDetectorScalingMode.GreaterToSmaller;
-            detector.ScalingFactor = 1.5f;
-            detector.UseParallelProcessing = false;
-            detector.Suppression = 2;
+            
+            //detector.SearchMode = ObjectDetectorSearchMode.Average;
+            //detector.ScalingMode = ObjectDetectorScalingMode.GreaterToSmaller;
+            //detector.ScalingFactor = 1.5f;
+            //detector.UseParallelProcessing = false;
+            //detector.Suppression = 2;
 
             Rectangle[] objects = detector.ProcessFrame(picture);
 
